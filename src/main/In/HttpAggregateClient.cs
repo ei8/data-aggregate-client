@@ -1,5 +1,5 @@
 ﻿using NLog;
-using org.neurul.Common.Http;
+using neurUL.Common.Http;
 using Polly;
 using Splat;
 using System;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace works.ei8.Data.Aggregate.Client.In
+namespace ei8.Data.Aggregate.Client.In
 {
     public class HttpAggregateClient : IAggregateClient
     {
