@@ -23,7 +23,7 @@ namespace ei8.Data.Aggregate.Client.Out
         private static readonly string GetAggregatesPathTemplate = "data/aggregates";
         private static readonly Logger logger = LogManager.GetCurrentClassLogger();
 
-        public HttpAggregateQueryClient()
+        public HttpAggregateQueryClient(IRequestProvider requestProvider = null)
         {
             this.requestProvider = requestProvider ?? Locator.Current.GetService<IRequestProvider>();
         }

@@ -42,7 +42,7 @@ namespace ei8.Data.Aggregate.Client.In
                 AuthorId = authorId
             };
 
-            await this.requestProvider.PutAsync(
+            await this.requestProvider.PutAsync<object>(
                $"{avatarUrl}{string.Format(HttpAggregateClient.aggregatesPathTemplate, id)}",
                data,
                token: token,
